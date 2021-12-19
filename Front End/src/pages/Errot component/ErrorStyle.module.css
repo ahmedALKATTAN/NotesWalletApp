@@ -1,0 +1,74 @@
+.button2 {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #2a659d;
+  /* border: 1px solid #030204; */
+  border-radius: 8px;
+  padding: 0.2rem 1.5rem;
+}
+
+.button2:hover,
+.button2:active {
+  background: #d5951f;
+  /* border-color: #741188; */
+}
+
+.button2:focus {
+  outline: none;
+}
+
+.card {
+  background: white;
+
+  border-radius: 15px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 20%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header {
+  background: #3a71ac;
+  padding: 0.6rem;
+  font-size: 8px;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 30rem;
+  }
+}
